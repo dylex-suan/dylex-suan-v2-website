@@ -39,7 +39,7 @@ const ContactWrapper = styled.div`
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin: 50px 0 0 0;
+    margin: auto;
     height: 100%;
     max-width: 100%;
     width: 100%;
