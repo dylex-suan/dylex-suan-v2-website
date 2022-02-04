@@ -8,20 +8,23 @@ export const project_display = [
         id: 1,
         title: "COVID Watchdog",
         technologies: ["REACT.JS", "PYTHON", "CSS"],
-        description: "Web application to help people decide whether it's safe to visit a province based on number of COVID cases."
+        description: "Web application to help people decide whether it's safe to visit a province based on number of COVID cases.",
+        link: "https://devpost.com/software/covid-watchdog"
     },
     {
         image: insuratory,
         id: 2,
         title: "Insuratory",
         technologies: ["REACT NATIVE", "PYTHON", "CSS"],
-        description: "Mobile application to help people collate their belongings and organize them for insurance purposes."
+        description: "Mobile application to help people collate their belongings and organize them for insurance purposes.",
+        link: "https://devpost.com/software/project-05lv3wfpng62"
     },
     {
         image: not_newspaper,
         id: 3,
         title: "This Is Not A Newspaper",
         technologies: ["REACT.JS", "NODE.JS", "EXPRESS.JS", "CSS"],
-        description: "Web application to collect various news and present it in a simple and organized way."
+        description: "Web application to collect various news and present it in a simple and organized way.",
+        link: "https://devpost.com/software/this-is-not-a-newspaper"
     },
 ];
