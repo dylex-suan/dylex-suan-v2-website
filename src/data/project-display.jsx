@@ -9,7 +9,8 @@ export const project_display = [
         title: "COVID Watchdog",
         technologies: ["REACT.JS", "PYTHON", "CSS"],
         description: "Web application to help people decide whether it's safe to visit a province based on number of COVID cases.",
-        link: "https://devpost.com/software/covid-watchdog"
+        devpostLink: "https://devpost.com/software/covid-watchdog",
+        gitLink: "https://github.com/dylex-suan/Covid-Watchdog"
     },
     {
         image: insuratory,
@@ -17,7 +18,8 @@ export const project_display = [
         title: "Insuratory",
         technologies: ["REACT NATIVE", "PYTHON", "CSS"],
         description: "Mobile application to help people collate their belongings and organize them for insurance purposes.",
-        link: "https://devpost.com/software/project-05lv3wfpng62"
+        devpostLink: "https://devpost.com/software/project-05lv3wfpng62",
+        gitLink: "https://github.com/dylex-suan/insurance-inventory"
     },
     {
         image: not_newspaper,
@@ -25,6 +27,7 @@ export const project_display = [
         title: "This Is Not A Newspaper",
         technologies: ["REACT.JS", "NODE.JS", "EXPRESS.JS", "CSS"],
         description: "Web application to collect various news and present it in a simple and organized way.",
-        link: "https://devpost.com/software/this-is-not-a-newspaper"
+        devpostLink: "https://devpost.com/software/this-is-not-a-newspaper",
+        gitLink: "https://github.com/dylex-suan/tohacks2021",
     },
 ];

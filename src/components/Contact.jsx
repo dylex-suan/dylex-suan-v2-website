@@ -7,7 +7,7 @@ import EmailIcon from '@mui/icons-material/Email';
 
 export const Contact = () => {
     return (
-        <ContactWrapper>
+        <ContactWrapper id="contacts">
             <IconContainer>
                 <IconWrapper>
                     <a href="https://www.linkedin.com/in/dylex-suan/">
@@ -25,7 +25,7 @@ export const Contact = () => {
                 </IconWrapper>
             </IconContainer>
             <Text>
-                Made with ❤️ using React and Material UI<br />
+                Made with React and Material UI<br />
                 By: Dylex Suan
             </Text>
         </ContactWrapper>

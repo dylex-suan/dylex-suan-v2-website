@@ -6,19 +6,38 @@ import profile_photo from './assets/profile_photo.png';
 import { About } from './components/About';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
-
+import ButtonNavbar from './components/ButtonNavbar';
+import { Resumé } from './components/Resumé';
+import { Experience } from './components/Experience';
 export const App = () => {
   return (
-    <Container>
-      <Image src={profile_photo} alt='' />
-      <About />
-      <Projects />
-      <Contact />
-    </Container>
+    <AppContainer>
+      <ButtonNavbar />
+      <DescriptionContainer id="rise-up">
+        <About />
+        <Experience />
+        <Projects />
+        <Resumé />
+        <Contact />
+      </DescriptionContainer>
+    </AppContainer>
   )
 }
 
-const Container = styled.div`
+const AppContainer = styled.div`
+ @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: 2s ease-in 0s 1 fadeInOpacity;
+`;
+const DescriptionContainer = styled.div`
   background: #FFF9F9;
   display: flex;
   flex-wrap: wrap;
@@ -26,16 +45,14 @@ const Container = styled.div`
   align-items: center;
   flex-direction: row;
   font-family: "Open-Sans", sans-serif;
-  margin: auto;
+  height: 100%;
+  min-width: 400px;
+  z-index: 2;
   @media (max-width: 500px) {
     width: 100%;
-    padding: 25px;
   }
-  @media (max-width: 400px) {
-    padding: 30px;
-  }
-`;
 
+`;
 const Image = styled.img`
   width: 449px;
   height: 449px;
@@ -43,3 +60,4 @@ const Image = styled.img`
   align-items: center;
   justify-content: center;
 `;
+

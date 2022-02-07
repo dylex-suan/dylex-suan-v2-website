@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const About = () => {
     return (
-        <Wrapper>
+        <Wrapper id="about">
             <Greeting>Hi! I'm Dylex Suan!👋🏽</Greeting>
             <Body>
-                I am currently a 2B Computer Science Student at the University of Waterloo and am currently completing my internship at Prodigy!<br /><br />
-                I was previously a full-stack developer at the University of Waterloo, working on the Math Faculty Question Bank for professors and teaching assistants!<br /><br />
-                Fun fact, I was previously a French journalist in the Greater Toronto area, and a Student Trustee for the Halton Catholic District School Board!<br /><br />
+                I am currently a 2B Computer Science Student at the University of Waterloo
+                and am currently completing my second internship at <a href="https://www.prodigygame.com/main-en/" style={{ textDecoration: "none", color: "black" }}><b>Prodigy Education!</b></a><br /><br />
+                I love to play piano in my free time, and I love to travel and drive to new places!
+                Please feel free to reach me using my <a href="#contacts" style={{ textDecoration: "none", color: "black" }}><b>contacts</b></a> below!
             </Body>
         </Wrapper>
     )
@@ -15,11 +16,14 @@ export const About = () => {
 
 const Greeting = styled.h1`
     font-size: 45px;
+    margin-top: 100px;
 `;
 
 const Wrapper = styled.div`
-    max-width: 90%;
+    max-width: 100%;
+    width: 90%;
     line-height: 1.5;
+    margin: 100px 0;
 `;
 
 const Body = styled.p`

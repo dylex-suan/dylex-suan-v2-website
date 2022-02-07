@@ -1,28 +1,43 @@
 import styled from 'styled-components';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
-export const Project = (props) => {
-    const { data } = props;
+export const Project = ({ data }) => {
     return (
-        <a href={data.link} style={{ textDecoration: "none", color: "black" }}>
-            <Container>
-                <Image src={data.image} alt='' />
-                <DescriptionWrapper>
-                    <Heading>
-                        {data.title}
-                    </Heading>
-                    <RemoteWrapper>
-                        {data.technologies.map((tech, id) => {
-                            return (
-                                <RemoteText>
+        <Container>
+            <Image src={data.image} alt='' />
+            <DescriptionWrapper>
+                <Heading>
+                    {data.title}
+                </Heading>
+                <RemoteWrapper>
+                    {data.technologies.map((tech, id) => {
+                        return (
+                            <RemoteText>
+                                <b>
                                     {tech}
-                                </RemoteText>
-                            )
-                        })}
-                    </RemoteWrapper>
-                    <Description>{data.description}</Description>
-                </DescriptionWrapper>
-            </Container>
-        </a>
+                                </b>
+                            </RemoteText>
+                        )
+                    })}
+                </RemoteWrapper>
+                <Description>{data.description}</Description>
+                {data.gitLink && <GithubWrapper>
+                    <GithubLink href={data.gitLink}>
+                        <GitHubIcon />
+                        <GithubText>
+                            View on Github
+                        </GithubText>
+                    </GithubLink>
+                </GithubWrapper>}
+                {data.devpostLink && <DevpostWrapper>
+                    <DevpostLink href={data.devpostLink}>
+                        <DevpostText>
+                            View on Devpost
+                        </DevpostText>
+                    </DevpostLink>
+                </DevpostWrapper>}
+            </DescriptionWrapper>
+        </Container>
     )
 }
 
@@ -30,7 +45,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     max-width: 960px;
-    height: 300px;
+    height: 100%;
     background-color: #F1EBEB;
     margin: 30px 0;
     border-radius: 50px;
@@ -75,10 +90,10 @@ const Description = styled.p`
 `;
 
 const RemoteText = styled.p`
-    background-color: #5caff2;
-    margin: 0px 5px 0px 0px;
+    background-color: #28a684;
+    margin: 0 5px 0 0;
     padding: 1px 5px;
-    border-radius: 10%;
+    border-radius: 30px;
     font-size: 18px;
 `
 
@@ -87,4 +102,51 @@ const RemoteWrapper = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     flex-wrap: nowrap;
+`;
+
+const GithubWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+`;
+
+const GithubLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131414;
+    color: white;
+    width: 60%;
+    border-radius: 30px;
+    text-decoration: none;
+`;
+
+const GithubText = styled.h2`
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+`;
+
+const DevpostWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 0;
+`;
+
+const DevpostLink = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003E54;
+    color: white;
+    width: 60%;
+    border-radius: 30px;
+    text-decoration: none;
+`
+
+const DevpostText = styled.h2`
+    color: white;
+    font-size: 20px;
+    margin: 10px;
 `;
