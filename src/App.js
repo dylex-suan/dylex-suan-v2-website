@@ -12,7 +12,9 @@ import { Experience } from './components/Experience';
 export const App = () => {
   return (
     <AppContainer>
-      <ButtonNavbar />
+      <NavbarContainer>
+        <ButtonNavbar />
+      </NavbarContainer>
       <DescriptionContainer id="rise-up">
         <About />
         <Experience />
@@ -25,18 +27,23 @@ export const App = () => {
 }
 
 const AppContainer = styled.div`
- @keyframes fadeInOpacity {
+  scroll-behavior: smooth;
+`;
+
+const NavbarContainer = styled.div`
+  @keyframes fadeInDownOpacity {
     0% {
       opacity: 0;
-      transform: translateY(30px);
+      transform: translateY(-25px);
     }
     100% {
       opacity: 1;
     }
   }
 
-  animation: 2s ease-in 0s 1 fadeInOpacity;
+  animation: 2s ease-in 0s 1 fadeInDownOpacity;
 `;
+
 const DescriptionContainer = styled.div`
   background: #FFF9F9;
   display: flex;
@@ -52,11 +59,22 @@ const DescriptionContainer = styled.div`
     width: 100%;
   }
 
+ @keyframes fadeInUpOpacity {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  animation: 2s ease-in 0s 1 fadeInUpOpacity;
 `;
 const Image = styled.img`
   width: 449px;
   height: 449px;
-  padding: 15px 0px;
+  padding: 15px 0 0px;
   align-items: center;
   justify-content: center;
 `;

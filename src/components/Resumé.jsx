@@ -18,10 +18,10 @@ const Container = styled.div`
     display: block;
     text-align: center;
     max-width: 100%;
-    width: 60%;
+    width: 100%;
     height: 100%;
     line-height: 1.5;
-    margin: 50px 0;
+    margin: 50px;
 `;
 
 const Heading = styled.h1`

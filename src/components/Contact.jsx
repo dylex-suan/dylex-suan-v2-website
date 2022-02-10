@@ -61,4 +61,7 @@ const IconWrapper = styled.div`
     justify-content: space-between;
     margin: 20px;
     width: 35%;
+    @media (max-width: 768px) {
+        width: 50%;
+    }
 `;

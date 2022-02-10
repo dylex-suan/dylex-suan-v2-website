@@ -19,7 +19,7 @@ export const Experience = () => {
                 <TimelineContainer>
                     <Content>
                         <h1>Full Stack Developer @ University of Waterloo</h1>
-                        <Description>Tools: JavaScript, React/Redux, Node, Express, Docker</Description>
+                        <Description>Tools: JavaScript, React/Redux, Node, Express, PostgreSQL, Docker</Description>
                         <ul>
                             <Bullet>Built the Math Faculty Question Bank, where professors can save questions and assignments in LaTeX format to be used
                                 in over 200 courses</Bullet>
@@ -38,6 +38,9 @@ const Heading = styled.h1`
     text-align: center;
     font-size: 45px;
     width: 100%;
+    @media (max-width: 600px) {
+        margin-top: 200px;
+    }
 `;
 
 const Container = styled.div`
@@ -45,6 +48,7 @@ const Container = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     max-width: 100%;
+    width: 100%;
 `;
 
 const Timeline = styled.div`
@@ -71,26 +75,10 @@ const Timeline = styled.div`
 `;
 
 const TimelineContainer = styled.div`
-    ${'' /* padding: 10px 40px; */}
-    ${'' /* position: relative; */}
     background-color: inherit;
     max-width: 100%; 
-    left: 20%;
+    left: 30%;
     z-index: 3;
-
-    ${'' /* 990 px is the cutoff */}
-    ${'' /* &:after {
-        content: '';
-        position: absolute;
-        width: 25px;
-        height: 25px;
-        left: -67px;
-        background-color: white;
-        border: 4px solid #FF9F55;
-        top: 15px;
-        border-radius: 50%;
-        z-index: 3;
-    } */}
 
     @media (max-width: 1000px) {
         left: 40%;

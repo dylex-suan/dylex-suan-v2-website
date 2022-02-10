@@ -1,16 +1,17 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 export const Project = ({ data }) => {
+    const { image, title, technologies, description, gitLink, devpostLink } = data;
     return (
         <Container>
-            <Image src={data.image} alt='' />
+            <Image src={image} alt='' />
             <DescriptionWrapper>
                 <Heading>
-                    {data.title}
+                    {title}
                 </Heading>
                 <RemoteWrapper>
-                    {data.technologies.map((tech, id) => {
+                    {technologies.map((tech, id) => {
                         return (
                             <RemoteText>
                                 <b>
@@ -20,22 +21,22 @@ export const Project = ({ data }) => {
                         )
                     })}
                 </RemoteWrapper>
-                <Description>{data.description}</Description>
-                {data.gitLink && <GithubWrapper>
-                    <GithubLink href={data.gitLink}>
+                <Description>{description}</Description>
+                {gitLink && <SeeProjectWrapper>
+                    <GithubLink href={gitLink}>
                         <GitHubIcon />
-                        <GithubText>
+                        <GenericRoundText>
                             View on Github
-                        </GithubText>
+                        </GenericRoundText>
                     </GithubLink>
-                </GithubWrapper>}
-                {data.devpostLink && <DevpostWrapper>
-                    <DevpostLink href={data.devpostLink}>
-                        <DevpostText>
+                </SeeProjectWrapper>}
+                {devpostLink && <SeeProjectWrapper>
+                    <DevpostLink href={devpostLink}>
+                        <GenericRoundText>
                             View on Devpost
-                        </DevpostText>
+                        </GenericRoundText>
                     </DevpostLink>
-                </DevpostWrapper>}
+                </SeeProjectWrapper>}
             </DescriptionWrapper>
         </Container>
     )
@@ -104,49 +105,39 @@ const RemoteWrapper = styled.div`
     flex-wrap: nowrap;
 `;
 
-const GithubWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-`;
-
-const GithubLink = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #131414;
-    color: white;
-    width: 60%;
-    border-radius: 30px;
-    text-decoration: none;
-`;
-
-const GithubText = styled.h2`
-    color: white;
-    font-size: 20px;
-    margin: 10px;
-`;
-
-const DevpostWrapper = styled.div`
+const SeeProjectWrapper = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
     margin: 10px 0;
 `;
 
-const DevpostLink = styled.a`
+const GenericLink = css`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #003E54;
     color: white;
     width: 60%;
     border-radius: 30px;
     text-decoration: none;
+    transition: 0.3s;
+   &:hover {
+       transform: translateY(-5px);
+   }
 `
 
-const DevpostText = styled.h2`
+const GenericRoundText = styled.h2`
     color: white;
     font-size: 20px;
     margin: 10px;
+`
+
+const GithubLink = styled.a`
+    ${GenericLink}
+    background-color: #131414;
 `;
+
+const DevpostLink = styled.a`
+    ${GenericLink}
+    background-color: #003E54;
+`
