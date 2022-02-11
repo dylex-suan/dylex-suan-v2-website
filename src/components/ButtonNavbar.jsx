@@ -27,9 +27,6 @@ export default function ButtonNavbar() {
                     Contacts
                 </b>
             </Links>
-            <Icon href="javascript:void(0);" className="icon">
-                <i className="fa fa-bars"></i>
-            </Icon>
         </LinkWrapper>
     )
 }
@@ -70,11 +67,3 @@ const Links = styled.a`
     }
 
 `;
-
-const Icon = styled.a`
-    display: none;
-    @media (max-width: 600px) {
-        float: right;
-        display: block;
-    }
-`

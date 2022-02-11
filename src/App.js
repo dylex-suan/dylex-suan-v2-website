@@ -68,11 +68,4 @@ const DescriptionContainer = styled.div`
 
   animation: 2s ease-in 0s 1 fadeInUpOpacity;
 `;
-const Image = styled.img`
-  width: 449px;
-  height: 449px;
-  padding: 15px 0 0px;
-  align-items: center;
-  justify-content: center;
-`;
 
