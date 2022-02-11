@@ -1,8 +1,5 @@
-import logo from './logo.svg';
-// import './App.css';
 import './fonts/fonts.css';
 import styled from 'styled-components';
-import profile_photo from './assets/profile_photo.png';
 import { About } from './components/About';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
