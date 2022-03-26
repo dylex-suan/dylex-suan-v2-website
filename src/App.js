@@ -6,6 +6,7 @@ import { Contact } from './components/Contact';
 import ButtonNavbar from './components/ButtonNavbar';
 import { Resumé } from './components/Resumé';
 import { Experience } from './components/Experience';
+
 export const App = () => {
   return (
     <AppContainer>
