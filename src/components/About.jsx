@@ -18,7 +18,8 @@ export const About = () => {
 
 const Greeting = styled.h1`
     font-size: 45px;
-    margin-top: 100px;
+    font-weight: bold;
+    margin-bottom: 50px;
     @media (max-width: 600px) {
         margin-top: 250px;
     }

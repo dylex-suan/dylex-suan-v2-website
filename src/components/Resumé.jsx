@@ -26,6 +26,8 @@ const Container = styled.div`
 
 const Heading = styled.h1`
     font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 30px;
 `;
 
 const Description = styled.p`

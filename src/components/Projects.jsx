@@ -26,6 +26,7 @@ const Wrapper = styled.div`
 `;
 
 const Intro = styled.h1`
+    font-weight: bold;
     font-size: 45px;
     margin-top: 100px;
 `;

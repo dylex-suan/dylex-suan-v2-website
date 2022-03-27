@@ -9,7 +9,7 @@ export const Experience = () => {
             <Timeline>
                 <TimelineContainer>
                     <Content>
-                        <h1>Full Stack Developer @ Prodigy Education Inc.</h1>
+                        <JobTitle>Full Stack Developer @ Prodigy Education Inc.</JobTitle>
                         <Description>Tools: JavaScript, React/Redux, Jest</Description>
                         <Description>Currently working on the Memberships Team, managing the company's membership landing pages,
                             purchase flow and post-purchase flow</Description>
@@ -18,7 +18,7 @@ export const Experience = () => {
                 </TimelineContainer>
                 <TimelineContainer>
                     <Content>
-                        <h1>Full Stack Developer @ University of Waterloo</h1>
+                        <JobTitle>Full Stack Developer @ University of Waterloo</JobTitle>
                         <Description>Tools: JavaScript, React/Redux, Node, Express, PostgreSQL, Docker</Description>
                         <ul>
                             <Bullet>Built the Math Faculty Question Bank, where professors can save questions and assignments in LaTeX format to be used
@@ -34,8 +34,13 @@ export const Experience = () => {
 
 }
 
+const JobTitle = styled.h1`
+    font-weight: bold;
+`
+
 const Heading = styled.h1`
     text-align: center;
+    font-weight: bold;
     font-size: 45px;
     width: 100%;
     margin-top: 100px;

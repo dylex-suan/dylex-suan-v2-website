@@ -1,4 +1,5 @@
 import './fonts/fonts.css';
+import './App.css';
 import styled from 'styled-components';
 import { About } from './components/About';
 import { Projects } from './components/Projects';

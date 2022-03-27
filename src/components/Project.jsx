@@ -71,6 +71,8 @@ const Image = styled.img`
 
 const Heading = styled.h1`
     font-size: 36px;
+    font-weight: bold;
+    margin-top: 30px;
     @media (max-width: 500px) {
         font-size: 30px;
     }
@@ -88,6 +90,7 @@ const DescriptionWrapper = styled.div`
 
 const Description = styled.p`
     font-size: 20px;
+    margin-top: 10px;
 `;
 
 const RemoteText = styled.p`
@@ -121,9 +124,9 @@ const GenericLink = css`
     border-radius: 30px;
     text-decoration: none;
     transition: 0.3s;
-   &:hover {
-       transform: translateY(-5px);
-   }
+    &:hover {
+        transform: translateY(-5px);
+    }
 `
 
 const GenericRoundText = styled.h2`

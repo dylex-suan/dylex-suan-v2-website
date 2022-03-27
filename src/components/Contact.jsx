@@ -46,6 +46,7 @@ const ContactWrapper = styled.div`
 
 const Text = styled.p`
     font-size: 16px;
+    font-weight: bold;
     color: white;
 `
 
