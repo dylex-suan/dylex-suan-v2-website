@@ -4,6 +4,11 @@
   font-weight: bold;
   display: flex;
   justify-content: right;
+  border-bottom: 2px solid black;
   width: 100%;
   z-index: 2;
+}
+
+.navbar .container {
+  border-bottom: none;
 }

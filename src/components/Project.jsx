@@ -132,6 +132,7 @@ const GenericLink = css`
 const GenericRoundText = styled.h2`
     color: white;
     font-size: 20px;
+    font-weight: bold;
     margin: 10px;
 `
 
