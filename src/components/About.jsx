@@ -20,7 +20,7 @@ const Greeting = styled.h1`
     font-size: 45px;
     font-weight: bold;
     margin-bottom: 50px;
-    margin-top: 50px;
+    margin-top: 100px;
 `;
 
 const Wrapper = styled.div`
