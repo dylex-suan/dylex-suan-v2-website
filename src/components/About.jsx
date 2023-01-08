@@ -5,10 +5,11 @@ export const About = () => {
         <Wrapper id="about">
             <Greeting>Hi! I'm Dylex Suan!👋🏽</Greeting>
             <Body>
-                I am currently a 2B Computer Science Student at the University of Waterloo
-                and am currently completing my second internship at <a href="https://www.prodigygame.com/main-en/" style={{ textDecoration: "none", color: "black" }}><b>Prodigy Education!</b></a><br /><br />
-                I'm currently interested in full-stack development, and have experience working with several web and mobile
-                frameworks! Recently, I worked with React and React Native!<br /><br />
+                I am currently a 3A Computer Science Student at the University of Waterloo
+                and completed my third internship at <a href="https://perasoinc.com/" style={{ textDecoration: "none", color: "black" }}><b>Peraso Inc! </b></a>
+                I'm currently searching for <b>Summer 2023</b> internships!<br /><br />
+                I'm currently interested in backend development or DevOps, and have experience working with several web and mobile
+                frameworks!<br /><br />
                 I love to play piano in my free time, and I love to travel and drive to new places!
                 Please feel free to reach me using my <a href="#contacts" style={{ textDecoration: "none", color: "black" }}><b>contacts</b></a> below!
             </Body>

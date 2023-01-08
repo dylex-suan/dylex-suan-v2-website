@@ -9,17 +9,25 @@ export const Experience = () => {
             <Timeline>
                 <TimelineContainer>
                     <Content>
-                        <JobTitle>Full Stack Developer @ Prodigy Education Inc.</JobTitle>
-                        <Description>Tools: JavaScript, React/Redux, Jest</Description>
-                        <Description>Currently working on the Memberships Team, managing the company's membership landing pages,
-                            purchase flow and post-purchase flow</Description>
-                        <Date>January 2022 - present</Date>
+                        <JobTitle>Automation Software Developer @ Peraso Inc.</JobTitle>
+                        <Description>Tools: Windows Sockets 2, C++, Node.js, Qt</Description>
+                        <Description>Spearheaded the migration of the company's automation service from QtScript to Node.js, intended to test Wi-fi devices through MCCI dongles on multiple remote hosts.</Description>
+                        <Date>September 2022 - December 2022</Date>
                     </Content>
                 </TimelineContainer>
                 <TimelineContainer>
                     <Content>
-                        <JobTitle>Full Stack Developer @ University of Waterloo</JobTitle>
-                        <Description>Tools: JavaScript, React/Redux, Node, Express, PostgreSQL, Docker</Description>
+                        <JobTitle>Full Stack Developer @ Prodigy Education Inc.</JobTitle>
+                        <Description>Tools: JavaScript, React, Redux, GraphQL, Jest, Optimizely, Segment</Description>
+                        <Description>Worked on the Memberships Team, managing the company's membership landing pages,
+                            purchase flow and post-purchase flow during the release of <a href="https://www.prodigygame.com/Memberships/english/" style={{ textDecoration: "none", color: "black" }}><b>Prodigy English</b></a></Description>
+                        <Date>January 2022 - April 2022</Date>
+                    </Content>
+                </TimelineContainer>
+                <TimelineContainer>
+                    <Content>
+                        <JobTitle>Software Developer @ University of Waterloo</JobTitle>
+                        <Description>Tools: JavaScript, React, Redux, Node, Express, PostgreSQL, Docker</Description>
                         <ul>
                             <Bullet>Built the Math Faculty Question Bank, where professors can save questions and assignments in LaTeX format to be used
                                 in over 200 courses</Bullet>
